@@ -19,7 +19,7 @@ int findind(int arr[],int n,int x)
             {
                 right=mid-1;
             }
-         else (x<arr[mid])
+         else
         {
             left=mid+1;
         }
@@ -35,8 +35,10 @@ int findind(int arr[],int n,int x)
             right=mid-1;
            }
         }
+    }
         return -1;
     }
+
 
 
 int main ()
@@ -55,17 +57,16 @@ int main ()
     cout<<"Find Index Of X ";
     cin>>x;
 
-    int output=findind(arr,x);
+    int output=findind(arr,n,x);
     cout <<output;
-      if (index==-1)
+      if (output==-1)
   {
     cout<<"Target Not found ";
   }
   else
     {
-        cout<< "Index Number "<<index;
+        cout<< "Index Number "<<output;
 
   }
-
 
 }
